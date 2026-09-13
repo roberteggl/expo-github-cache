@@ -33,7 +33,7 @@ bun add @eggl-js/expo-github-cache -d
 >
 > If you prefer to use the GitHub NPM registry, you can install the package directly from there:
 > ```bash
-> npm install @robert27/expo-github-cache --registry=https://npm.pkg.github.com
+> npm install @roberteggl/expo-github-cache --registry=https://npm.pkg.github.com
 > ```
 
 ## Configuration

@@ -133,11 +133,11 @@ jobs:
         with:
           node-version: "24"
           registry-url: "https://npm.pkg.github.com"
-          scope: "@robert27"
+          scope: "@roberteggl"
 
       - name: Set scope for GitHub Packages
         run: |
-          jq '.name = "@robert27/expo-github-cache"' package.json > tmp.json && mv tmp.json package.json
+          jq '.name = "@roberteggl/expo-github-cache"' package.json > tmp.json && mv tmp.json package.json
 
       - name: Publish to GitHub Packages
         run: npm publish
