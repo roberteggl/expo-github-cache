@@ -1,6 +1,6 @@
 {
 	"name": "@eggl-js/expo-github-cache",
-	"version": "0.4.1",
+	"version": "0.5.0",
 	"license": "MIT",
 	"description": "A Expo build cache using GitHub as a storage backend.",
 	"keywords": [
@@ -38,7 +38,7 @@
 	},
 	"dependencies": {
 		"@babel/code-frame": "7.29.7",
-		"@expo/config": "^57.0.0",
+		"@expo/config": "^12.0.14",
 		"@expo/spawn-async": "^1.7.2",
 		"@octokit/rest": "^22.0.0",
 		"chalk": "^5.6.2",
@@ -58,9 +58,7 @@
 		"@tsconfig/node24": "24.0.4",
 		"@types/bun": "latest",
 		"@types/cli-progress": "^3.11.6",
-		"@types/fs-extra": "11.0.4"
-	},
-	"peerDependencies": {
+		"@types/fs-extra": "11.0.4",
 		"typescript": "^5.8.3"
 	},
 	"engines": {

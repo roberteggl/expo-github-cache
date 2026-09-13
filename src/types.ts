@@ -5,10 +5,10 @@
  * @module types
  */
 
-import type { ResolveRemoteBuildCacheProps } from "@expo/config";
+import type { RunOptions } from "@expo/config";
 
 /**
  * Represents the build run options from Expo's configuration
  * Contains platform-specific build configuration settings
  */
-export type RunOptions = ResolveRemoteBuildCacheProps["runOptions"];
+export type { RunOptions };

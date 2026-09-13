@@ -97,6 +97,7 @@ When you run a build command, the plugin:
 ## Requirements
 
 - Node.js 18 or higher
+- Expo SDK 56 or 57 (uses `@expo/config` build cache provider types)
 - GitHub repository with release permissions
 - GitHub authentication via `GITHUB_TOKEN`, `GH_TOKEN`, or `gh auth login`
 - Expo project with fingerprinting enabled

@@ -1,11 +1,11 @@
 import { describe, expect, test } from "bun:test";
-import type { ResolveRemoteBuildCacheProps } from "@expo/config";
+import type { ResolveBuildCacheProps } from "@expo/config";
 import buildCachePlugin from "../src/index";
 
 // Create dummy build props
 const createDummyProps = (
 	platform: "ios" | "android",
-): ResolveRemoteBuildCacheProps => ({
+): ResolveBuildCacheProps => ({
 	projectRoot: "/fake/project",
 	platform,
 	fingerprintHash: "1234567890abcdef",

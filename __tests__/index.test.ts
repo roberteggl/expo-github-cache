@@ -1,6 +1,6 @@
 import { afterEach, beforeEach, describe, expect, test } from "bun:test";
 import * as path from "node:path";
-import type { ResolveRemoteBuildCacheProps } from "@expo/config";
+import type { ResolveBuildCacheProps } from "@expo/config";
 import buildCachePlugin from "../src/index";
 
 // Preserve original environment
@@ -13,7 +13,7 @@ const testProjectRoot = path.join(import.meta.dir, "..");
 // Create dummy build props
 const createDummyProps = (
 	platform: "ios" | "android",
-): ResolveRemoteBuildCacheProps => ({
+): ResolveBuildCacheProps => ({
 	projectRoot: testProjectRoot,
 	platform,
 	fingerprintHash: "1234567890abcdef",
@@ -64,7 +64,7 @@ describe("GitHub Cache Plugin - Environment Variable Tests", () => {
 		});
 	});
 
-	describe("uploadRemoteBuildCache", () => {
+	describe("uploadBuildCache", () => {
 		test("should return null when GitHub token is missing", async () => {
 			// Ensure no token env vars are set
 			delete process.env.GITHUB_TOKEN;

@@ -131,7 +131,7 @@ const fetchCachedBuild = async (
 /**
  * Publishes a build artifact to GitHub Releases for caching
  *
- * @param {UploadRemoteBuildCacheProps} props - Build artifact properties
+ * @param {UploadBuildCacheProps} props - Build artifact properties
  * @param {object} githubConfig - GitHub repository configuration
  * @param {string} githubConfig.owner - Repository owner/organization name
  * @param {string} githubConfig.repo - Repository name
@@ -210,7 +210,7 @@ function getTagName({
 /**
  * Generates the full path for a cached application file
  *
- * @param {ResolveRemoteBuildCacheProps} props - Build properties containing metadata
+ * @param {ResolveBuildCacheProps} props - Build properties containing metadata
  * @returns {string} - Full path to the cached application file
  */
 function getCachedAppPath({

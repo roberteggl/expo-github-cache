@@ -1,10 +1,10 @@
 import { describe, expect, test } from "bun:test";
-import type { ResolveRemoteBuildCacheProps } from "@expo/config";
+import type { ResolveBuildCacheProps } from "@expo/config";
 import buildCachePlugin from "../src/index";
 
 describe("Build Cache Edge Cases", () => {
 	test("should handle empty fingerprint hash", async () => {
-		const props: ResolveRemoteBuildCacheProps = {
+		const props: ResolveBuildCacheProps = {
 			projectRoot: "/fake/project",
 			platform: "ios",
 			fingerprintHash: "", // Empty fingerprint hash
@@ -22,7 +22,7 @@ describe("Build Cache Edge Cases", () => {
 	});
 
 	test("should handle empty project root", async () => {
-		const props: ResolveRemoteBuildCacheProps = {
+		const props: ResolveBuildCacheProps = {
 			projectRoot: "", // Empty project root
 			platform: "ios",
 			fingerprintHash: "1234567890abcdef",
@@ -40,7 +40,7 @@ describe("Build Cache Edge Cases", () => {
 	});
 
 	test("should handle undefined runOptions", async () => {
-		const props: ResolveRemoteBuildCacheProps = {
+		const props: ResolveBuildCacheProps = {
 			projectRoot: "/fake/project",
 			platform: "android",
 			fingerprintHash: "1234567890abcdef",
@@ -57,7 +57,7 @@ describe("Build Cache Edge Cases", () => {
 	});
 
 	test("should handle empty owner/repo parameters", async () => {
-		const props: ResolveRemoteBuildCacheProps = {
+		const props: ResolveBuildCacheProps = {
 			projectRoot: "/fake/project",
 			platform: "ios",
 			fingerprintHash: "1234567890abcdef",
