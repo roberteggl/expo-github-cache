@@ -59,7 +59,7 @@
 		"@types/bun": "latest",
 		"@types/cli-progress": "^3.11.6",
 		"@types/fs-extra": "11.0.4",
-		"typescript": "^5.8.3"
+		"typescript": "^7.0.0"
 	},
 	"engines": {
 		"node": ">=18.0.0"
